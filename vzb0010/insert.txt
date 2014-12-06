@@ -1,0 +1,54 @@
+ 
+insert into Suppliers values(1,"Amazon","Hamilton","Laurell",1111111111);
+insert into Suppliers values(2,"Ebay","Koontz","Dean",2222222222);
+insert into Suppliers values(3,"Booksamillion","Roberts","Nora",3333333333);
+insert into Suppliers values(4,"University","Carter","Stephen",4444444444);
+
+
+insert into Books values(1,"The Quickie",15.94,"James",5,3,1);
+insert into Books values(2,"Blaze",13.24,"Richard",2,3,1);
+insert into Books values(3,"The Navigator",14.01,"Clive",10,2,1);
+insert into Books values(4,"Birmingham",19.99,"Tim",12,3,2);
+insert into Books values(5,"North Carolina Ghosts",7.95,"Lynne",5,2,2);
+insert into Books values(6,"Why I still live in Louisiana",5.95,"Ellen",30,1,3);
+insert into Books values(7,"The World Is Flat",30,"Thomas",17,3,4);
+
+ 
+insert into Subjects values(1,"Fiction");
+insert into Subjects values(2,"History");
+insert into Subjects values(3,"Travel");
+insert into Subjects values(4,"Technology");
+
+
+insert into Employees values(1,"Larson","Erik");
+insert into Employees values(2,"Steely","John");
+
+insert into Shippers values(1,"UPS");
+insert into Shippers values(2,"USPS");
+insert into Shippers values(3,"FedEx");
+
+insert into Customers values(1,"Lee","James","334-001-001");
+insert into Customers values(2,"Smith","John","334-002-002");
+insert into Customers values(3,"See","Lisa","334-003-003");
+insert into Customers values(4,"Collins","Jackie","334-004-004");
+
+
+insert into Orders values(1,1,1,"08/01/10","08/03/10",1);
+insert into Orders values(2,1,2,"08/04/10",NULL,NULL);
+insert into Orders values(3,2,1,"08/01/10","08/03/10",2);
+insert into Orders values(4,4,2,"08/04/10","08/05/10",1);
+
+
+insert into OrderDetails values(1,1,2);
+insert into OrderDetails values(4,1,1);
+insert into OrderDetails values(6,2,2);
+insert into OrderDetails values(7,2,3);
+insert into OrderDetails values(5,3,1);
+insert into OrderDetails values(3,4,1);
+insert into OrderDetails values(4,4,1);
+insert into OrderDetails values(7,4,1);
+
+
+
+
+

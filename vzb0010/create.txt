@@ -1,0 +1,18 @@
+
+create table Suppliers(SupplierID int(10) primary key,CompanyName varchar(20),ContactLastName varchar(20),ContactFirstName varchar(20),Phone varchar(20));
+
+create table Books(BookID int(10) primary key, Title varchar(30), Unit_Price float(10), Author varchar(30), Unit_in_Stock int(10), SupplierID int(10),SubjectID int(10));
+
+create table Subjects(SubjectID int(10) primary key, CategoryName varchar(30));
+
+create table Customers(CustomerID int(10) primary key, LastName varchar(20), FirstName varchar(20), Phone varchar(20));
+
+create table Orders(OrderID int(10) primary key, CustomerID int(10), EmployeeID int(10), OrderDate varchar(20), ShippedDate varchar(20),ShipperID int(10));
+
+create table Employees(EmployeeID int(10) primary key, LastName varchar(20), FirstName varchar(20));
+
+
+create table Shippers(ShipperID int(10) primary key, ShpperName varchar(20));
+
+
+create table OrderDetails(BookID int(10),OrderID int(10),Quantity int(10),primary key(BookID,OrderID),foreign key(BookID) references Books,foreign key(OrderID) references Orders);
